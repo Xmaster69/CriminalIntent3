@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentActivity
 private const val TAG = "CrimeListFragment"
 class CrimeListFragment: FragmentActivity(){
 
-    private val crimeListViewModel:CrimeListViewModel by viewModels()
+    private val crimeListViewModel:CrimeListViewModel by viewModels() //Однако ничего не понятно все равно
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
