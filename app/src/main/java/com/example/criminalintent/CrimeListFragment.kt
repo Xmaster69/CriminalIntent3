@@ -7,11 +7,12 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.ViewModelProvider
 
 private const val TAG = "CrimeListFragment"
-class CrimeListFragment: FragmentActivity(){
+class CrimeListFragment: Fragment(){
 
-    private val crimeListViewModel:CrimeListViewModel by viewModels() //Однако ничего не понятно все равно
+    private val crimeListViewModel:CrimeListViewModel by lazy { ViewModelProvider(this).get(CrimeListViewModel::class.java) } //Изменил на олдскульный вариант
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
