@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.FragmentActivity
 
 private const val TAG = "CrimeListFragment"
-class CrimeListFragment: Fragment(){
+class CrimeListFragment: FragmentActivity(){
 
     private val crimeListViewModel:CrimeListViewModel by viewModels()
 
